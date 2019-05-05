@@ -1,0 +1,69 @@
+.banner {
+  width: 100%;
+  position: relative;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  @include flex(center, center);
+  flex-direction: column;
+
+  @include tablet {
+    padding-top: 2%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  @include desktop {
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+
+.banner__background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../assets/images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(70%);
+
+  @include tablet {
+    filter: brightness(100%);
+  }
+}
+
+.solid-510OC {
+  .banner__background {
+    background-color: $banner-blue;
+    background-image: none;
+  }
+
+  .card__text {
+    background-color: transparent;
+  }
+
+  .thumbnail {
+    background-image: url("../assets/images/510-OC.jpg");
+  }
+}
+
+.solid-510L {
+  .banner__background {
+    background-image: url("../assets/images/hero.jpg");
+    background-size: cover;
+  }
+
+  .card__text {
+    background-color: transparent;
+    @include tablet {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .thumbnail {
+    background-image: url("../assets/images/510L.jpg");
+  }
+}

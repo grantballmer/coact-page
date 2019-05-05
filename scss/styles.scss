@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+// body {
+//   width: 100%;
+// }
+
+@import "./_variables.scss";
+@import "./_mixins.scss";
+
+@import "./_border.scss";
+@import "./_btn.scss";
+
+@import "./_banner.scss";
+@import "./_card.scss";
+
+@import "./_details.scss";
+@import "./_form.scss";
+
+@import "./_contact.scss";
