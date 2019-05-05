@@ -22,7 +22,11 @@
     // add error handling
 
 
-    mail($mail_to, $subject, $txt, $headers);
+    if (mail($mail_to, $subject, $txt, $headers)) {
+      console.log('success');
+    } else {
+      console.log('failed');
+    }
   }
 
 
