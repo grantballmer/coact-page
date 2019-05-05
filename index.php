@@ -136,7 +136,7 @@
               <label for="phone">Phone Number</label>
               <input type="tel" name="phone" placeholder="Phone Number" />
             </div>
-            <input type="submit" class="btn btn__light-blue" value="Submit" />
+            <input type="submit" name="submit" class="btn btn__light-blue" value="Submit" />
           </form>
         </div>
       </div>
