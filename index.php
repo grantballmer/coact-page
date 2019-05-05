@@ -115,7 +115,7 @@
             <p>Fill out the form below, and we'll reach out!</p>
           </div>
 
-          <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+          <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
             <div class="input-container input-container__name">
               <label for="firstname">First Name</label>
               <input type="text" name="firstname" placeholder="First Name" />
