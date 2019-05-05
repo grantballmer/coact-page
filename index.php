@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
 
-    <title>Coact Sample Page</title>
+    <title>Coact Page</title>
   </head>
   <body>
     <header class="border">
@@ -85,7 +85,7 @@
             <p>Fill out the form below, and we'll reach out!</p>
           </div>
 
-          <form>
+          <form action="contactform.php" method="post">
             <div class="input-container input-container__name">
               <label for="firstname">First Name</label>
               <input type="text" name="firstname" placeholder="First Name" />
